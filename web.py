@@ -9,7 +9,7 @@ from pathlib import Path
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
-app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
 def human_file_size(bytes_count):
     threshold = 1024
